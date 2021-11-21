@@ -3,10 +3,8 @@ package com.example.appui;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 
 public class MenuActivity extends AppCompatActivity {
@@ -31,7 +29,7 @@ public class MenuActivity extends AppCompatActivity {
                 startActivity(intent); //액티비티 이동
             }
         });
-        img_choose = (ImageView) findViewById(R.id.img_choose);
+        img_choose = (ImageView) findViewById(R.id.img_recommend);
         img_set = (ImageView) findViewById(R.id.img_set);
         img_school = (ImageView) findViewById(R.id.img_school);
 
