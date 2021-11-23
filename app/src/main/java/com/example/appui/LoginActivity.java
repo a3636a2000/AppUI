@@ -35,13 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         et_name = (EditText) findViewById(R.id.et_name);
         et_pass = (EditText) findViewById(R.id.et_pass);
         btn_login = (Button) findViewById(R.id.btn_login);
-        btn_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
-                startActivity(intent); //액티비티 이동
-            }
-        });
+
         btn_register = (Button) findViewById(R.id.btn_register);
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +96,8 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 IDRef.setValue(et_name.getText().toString());
                 PWRef.setValue(et_pass.getText().toString());
+                Intent intent = new Intent(LoginActivity.this, MenuActivity.class);
+                startActivity(intent); //액티비티 이동
             }
         });
     }
