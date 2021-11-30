@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppUI">
         <activity
+            android:name=".AfterActivity"
+            android:exported="false" />
+        <activity
             android:name=".MapActivity"
             android:exported="true" />
         <activity
@@ -36,6 +39,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBcjPPgN_2lLqSkyLyvHviP48JS32wRalQ" />
