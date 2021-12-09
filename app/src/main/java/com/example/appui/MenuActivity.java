@@ -31,6 +31,13 @@ public class MenuActivity extends AppCompatActivity {
         });
         img_choose = (ImageView) findViewById(R.id.img_recommend);
         img_set = (ImageView) findViewById(R.id.img_set);
+        img_child.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuActivity.this, SetActivity.class);
+                startActivity(intent); //액티비티 이동
+            }
+        });
         img_school = (ImageView) findViewById(R.id.img_school);
 
 

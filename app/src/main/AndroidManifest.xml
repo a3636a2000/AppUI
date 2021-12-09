@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppUI">
         <activity
+            android:name=".SetActivity"
+            android:exported="true" />
+        <activity
             android:name=".AfterActivity"
             android:exported="false" />
         <activity
